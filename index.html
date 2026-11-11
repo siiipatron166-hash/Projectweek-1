@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <title>Software Developer leerjaar 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
+
+    <video autoplay muted loop playsinline class="background">
+        <source src="img/background.mp4" type="video/mp4">
+    </video>
 
     <header class="container">
         <span class="logo">Software Developer</span>
@@ -117,7 +122,7 @@
     </section>
 
     <div class="foto">
-        <img src="img/Heyendaal.jpg" alt="Gebouw technovium">
+        <img src="img/heyendaal.png" alt="Gebouw technovium">
     </div>
 
     <section id="programmeertalen" class="container">
@@ -126,7 +131,7 @@
         <div class="info-kaarten">
 
             <div class="kaart">
-                <h3>Python</h3>
+                <h3>Python <i class="fa-brands fa-python"></i></h3>
                 <p>Een veelgebruikte taal voor data, AI en webapplicaties.</p>
                 <h4>Wereldwijde toepassingen:</h4>
                 <ul class="informatie">
@@ -138,7 +143,7 @@
             </div>
 
             <div class="kaart">
-                <h3>JavaScript</h3>
+                <h3>JavaScript <i class="fa-brands fa-square-js"></i></h3>
                 <p>De taal voor interactieve en dynamische websites.</p>
                 <h4>Wereldwijde toepassingen:</h4>
                 <ul class="informatie">
@@ -149,7 +154,7 @@
             </div>
 
             <div class="kaart">
-                <h3>HTML & CSS</h3>
+                <h3>HTML & CSS <i class="fa-solid fa-file-code"></i></h3>
                 <p>De basis van elke website, voor structuur en styling.</p>
                 <h4>Wereldwijde toepassingen:</h4>
                 <ul class="informatie">
@@ -160,7 +165,7 @@
                 <h4>Bedrijf in Nijmegen die dat gebruikt: Orangevalley</h4>
             </div>
             <div class="kaart">
-                <h3>Java</h3>
+                <h3>Java <i class="fa-brands fa-java"></i></h3>
                 <p>Een veelgebruikte taal voor grote applicaties en Android apps.</p>
                 <h4>Wereldwijde toepassingen:</h4>
                 <ul class="informatie">
@@ -183,7 +188,7 @@
             </div>
 
             <div class="kaart">
-                <h3>PHP</h3>
+                <h3>PHP <i class="fa-brands fa-php"></i></h3>
                 <p>Een taal die veel gebruikt wordt voor websites en webapplicaties.</p>
                 <h4>Wereldwijde toepassingen:</h4>
                 <ul class="informatie">
@@ -195,7 +200,10 @@
         </div>
     </section>
 
-    <section class="container">
+    <div class="iframe">
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/a23-gb3hxHU?si=2stCLF_EmaNUI0uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <section class="small-container">
         <h2>Open dagen en benodigdheden</h2>
         <div class="info-kaarten">
             <article class="kaart">
@@ -218,44 +226,42 @@
 
 
     <section id="contact">
-            <h2>Contact</h2>
-            <div class="info-kaarten">
-                <article class="kaart contact">
-                    <h3>ROC Nijmegen</h3>
-                    <p>
-                        Heyendaalseweg 98<br>
-                        6525 EE Nijmegen
-                    </p>
-                    <p><strong>Website:</strong> www.roc-nijmegen.nl</p>
-                    <p><strong>E-mail:</strong> info@roc-nijmegen.nl</p>
-                    <p><strong>Telefoon:</strong> 024 - 890 48 00</p>
-                    <p>Heb je vragen over opleidingen, open dagen of aanmeldingen? Neem contact op met ROC Nijmegen.</p>
-                </article>
- 
-                <article class="kaart">
-                    <h3>Stel een vraag</h3>
-                    <form>
-                        <label>Naam:</label>
-                        <input id="naam" name="naam" type="text">
- 
-                        <label>E-mail:</label>
-                        <input id="email" name="email" type="email">
- 
-                        <label>Vraag:</label>
-                        <textarea id="vraag" name="vraag"></textarea>
- 
-                        <button type="submit">Versturen</button>
-                    </form>
-                </article>
-            </div>
-        </section>
+        <h2>Contact</h2>
+        <div class="info-kaarten">
+            <article class="kaart contact">
+                <h3>ROC Nijmegen</h3>
+                <p>
+                    Heyendaalseweg 98<br>
+                    6525 EE Nijmegen
+                </p>
+                <p><strong>Website:</strong> www.roc-nijmegen.nl</p>
+                <p><strong>E-mail:</strong> info@roc-nijmegen.nl</p>
+                <p><strong>Telefoon:</strong> 024 - 890 48 00</p>
+                <p>Heb je vragen over opleidingen, open dagen of aanmeldingen? Neem contact op met ROC Nijmegen.</p>
+            </article>
 
+            <article class="kaart">
+                <h3>Stel een vraag</h3>
+                <form>
+                    <label>Naam:</label>
+                    <input id="naam" name="naam" type="text" required >
 
+                    <label>E-mail:</label>
+                    <input id="email" name="email" type="email" required>
 
+                    <label>Vraag:</label>
+                    <textarea id="vraag" name="vraag"></textarea>
 
+                    <button type="submit">Versturen</button>
+                </form>
+            </article>
+        </div>
+    </section>
 
-
-
+    <footer>
+        ROC Nijmegen - Opleiding Software Developer
+    </footer>
+   
 </body>
 
 </html>
