@@ -6,17 +6,18 @@
     <title>Software Developer leerjaar 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="container">
-    <span class="logo">Software Developer</span>
-    <nav>
-        <a href="#opleiding">Opleiding</a>
-        <a href="#vakken">Vakken</a>
-        <a href="#programmeertalen">Programmeertalen</a>
-        <a href="#beelden">Hoe ziet het eruit?</a>
-    </nav>
-</header>
+    <header class="container">
+        <span class="logo">Software Developer</span>
+        <nav>
+            <a href="#opleiding">Opleiding</a>
+            <a href="#vakken">Vakken</a>
+            <a href="#programmeertalen">Programmeertalen</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
 
     <!-- id is allemaal zodat het maar 1 keer kan en voor de nav die direct -->
@@ -91,10 +92,14 @@
         <img src="img/banner.jpg" alt="ROC Nijmegen">
     </div>
 
-<!-- bem zodat er een losse klasse voor kleur gevoegd kan worden -->
+    <!-- bem zodat er een losse klasse voor kleur gevoegd kan worden -->
     <section id="vakken" class="container">
         <h1 class="vakken">Vakken leerjaar 1</h1>
-         <p class="vakinfo"><strong>Tijdens de opleiding Software Developer volg je naast programmeervakken ook algemene ICT-vakken en basisvakken.<br> Bij ICT leer je meer over computers, netwerken, software en de werking van digitale systemen.<br> De basisvakken zoals Nederlands, Engels, rekenen en burgerschap helpen je bij het ontwikkelen van je communicatie, rekenvaardigheden en algemene kennis.<br> Deze vakken bereiden je voor op je toekomstige werk als Software Developer.</strong> </p>
+        <p class="vakinfo"><strong>Tijdens de opleiding Software Developer volg je naast programmeervakken ook algemene
+                ICT-vakken en basisvakken.<br> Bij ICT leer je meer over computers, netwerken, software en de werking
+                van digitale systemen.<br> De basisvakken zoals Nederlands, Engels, rekenen en burgerschap helpen je bij
+                het ontwikkelen van je communicatie, rekenvaardigheden en algemene kennis.<br> Deze vakken bereiden je
+                voor op je toekomstige werk als Software Developer.</strong> </p>
         <h3 class="vaktitel">ICT-vakken</h3>
         <ul class="vakken1">
             <li class="vakkenli vakkenli--ict">BasisProgrammeren 1/2</li>
@@ -129,6 +134,7 @@
                     <li>Netflix gebruikt Python voor aanbevelingen</li>
                     <li>Google gebruikt Python voor zoekopdrachten</li>
                 </ul>
+                <h4>bedrijf in Wijchen die dat gebruikt: Giesbers-Wijchen Bouw B.V.</h4>
             </div>
 
             <div class="kaart">
@@ -151,6 +157,7 @@
                     <li>Reddit gebruikt HTML & CSS voor de layout</li>
                     <li>Tweakers Nederlandse site gebouwd met HTML & CSS</li>
                 </ul>
+                <h4>Bedrijf in Nijmegen die dat gebruikt: Orangevalley</h4>
             </div>
             <div class="kaart">
                 <h3>Java</h3>
@@ -161,6 +168,7 @@
                     <li>LinkedIn gebruikt Java voor de servers</li>
                     <li>Minecraft is volledig gebouwd in Java</li>
                 </ul>
+                <h4>Bedrijf in Nijmegen die dat gebruikt: Planon</h4>
             </div>
 
             <div class="kaart">
@@ -184,9 +192,70 @@
                     <li>Wikipedia draait op PHP</li>
                 </ul>
             </div>
-
         </div>
     </section>
+
+    <section class="container">
+        <h2>Open dagen en benodigdheden</h2>
+        <div class="info-kaarten">
+            <article class="kaart">
+                <h3>Open dagen</h3>
+                <ul>
+                    <li>29 januari van 16:00 tot 20:00</li>
+                    <li>19 maart van 16:00 tot 18:00</li>
+                    <li>22 juni van 18:00 tot 20:00</li>
+                </ul>
+            </article>
+            <article class="kaart">
+                <h3>Wat heb je nodig?</h3>
+                <p>
+                    Veel opdrachten en leermiddelen zijn digitaal. Daarom heb je een geschikte laptop nodig.
+                    De precieze richtlijnen kunnen per opleiding verschillen.
+                </p>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="contact">
+            <h2>Contact</h2>
+            <div class="info-kaarten">
+                <article class="kaart contact">
+                    <h3>ROC Nijmegen</h3>
+                    <p>
+                        Heyendaalseweg 98<br>
+                        6525 EE Nijmegen
+                    </p>
+                    <p><strong>Website:</strong> www.roc-nijmegen.nl</p>
+                    <p><strong>E-mail:</strong> info@roc-nijmegen.nl</p>
+                    <p><strong>Telefoon:</strong> 024 - 890 48 00</p>
+                    <p>Heb je vragen over opleidingen, open dagen of aanmeldingen? Neem contact op met ROC Nijmegen.</p>
+                </article>
+ 
+                <article class="kaart">
+                    <h3>Stel een vraag</h3>
+                    <form>
+                        <label>Naam:</label>
+                        <input id="naam" name="naam" type="text">
+ 
+                        <label>E-mail:</label>
+                        <input id="email" name="email" type="email">
+ 
+                        <label>Vraag:</label>
+                        <textarea id="vraag" name="vraag"></textarea>
+ 
+                        <button type="submit">Versturen</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+
+
+
+
+
+
+
 </body>
 
 </html>

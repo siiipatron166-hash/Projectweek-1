@@ -83,8 +83,9 @@ h2 {
     background-color: #1a2330;
     padding: 20px;
     border-radius: 10px;
-    max-width: 450px;
+    flex: 1 220px;
     box-shadow: 0 0 3px 1px #ffffff50
+    
 }
 
 .kaart h3 {
@@ -213,3 +214,46 @@ margin-bottom: 16px;
     border-radius: 20px;
     
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+ 
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    color: #f3f6fa;
+    background-color: #0b1118;
+    border: 1px solid #526173;
+    border-radius: 5px;
+}
+ 
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    color: #f3f6fa;
+    background-color: #0b1118;
+    border: 1px solid #526173;
+    border-radius: 5px;
+}
+ 
+button {
+    align-self: flex-start;
+    margin-top: 8px;
+    padding: 10px 18px;
+    color: white;
+    background-color: #2056d8;
+    border: 0;
+    border-radius: 5px;
+}
+
+.contact p{
+    line-height: 2;
+
+
+}
+ 
